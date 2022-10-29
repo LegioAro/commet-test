@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тест гиперкомменты</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="image/new-logo-header.svg" alt="galaxy" />
+      </div>
+      <div class="header__text">Тест гиперкоммента</div>
+    </header>
+
+    <div class="video">
+      <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/XmAiqsPMPrU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div id="hypercomments_widget" class="hypercomments"></div>
+    <script type="text/javascript">
+      _hcwp = window._hcwp || [];
+      _hcwp.push({ widget: 'Stream', widget_id: 109768 });
+      (function () {
+        if ('HC_LOAD_INIT' in window) return;
+        HC_LOAD_INIT = true;
+        var lang = (
+          navigator.language ||
+          navigator.systemLanguage ||
+          navigator.userLanguage ||
+          'en'
+        )
+          .substr(0, 2)
+          .toLowerCase();
+        var hcc = document.createElement('script');
+        hcc.type = 'text/javascript';
+        hcc.async = true;
+        hcc.src =
+          ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://w.hypercomments.com/widget/hc/109768/' +
+          lang +
+          '/widget.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hcc, s.nextSibling);
+      })();
+    </script>
+    <a href="http://hypercomments.com" rel="nofollow" class="hc-link" title="comments widget"
+      >comments powered by HyperComments</a
+    >
+  </body>
+</html>
