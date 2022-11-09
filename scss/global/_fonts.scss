@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/lato_bold.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/lato_bold.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('/fonts/Lato/lato_bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/lato_bold.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/lato_bold.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/lato_bold.svg#lato_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Nakadai';
+  src: url('../fonts/nakadai.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/nakadai.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/nakadai.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/nakadai.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/nakadai.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/nakadai.svg#nakadai') format('svg'); /* Chrome < 4, Legacy iOS */
+}

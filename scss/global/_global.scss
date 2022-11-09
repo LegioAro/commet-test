@@ -1,6 +1,11 @@
 body {
-  background-image: radial-gradient(circle, rgba(0, 39, 95, 0.350578) 0%, rgba(1, 14, 39, 0) 60%);
-  background-color: #010e27;
+  background-image: url(../image/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: #04112a;
+  color: #ffffff;
+  font-family: 'Lato-Bold', sans-serif;
 }
 
 .header {
@@ -8,18 +13,85 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 748px;
-  padding: 50px 10px;
+  max-width: 1220px;
+  padding: 53px 10px 10px;
   margin: 0 auto;
+  &__text-block {
+    text-align: center;
+    font-family: 'Nakadai', sans-serif;
+  }
+  &__title {
+    font-size: 70px;
+    line-height: 84px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+  }
   &__text {
-    color: #fff;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
   }
 }
 .logo {
   width: 100%;
-  max-width: 250px;
+  max-width: 270px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 130px;
+    padding-bottom: 44px;
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__text {
+      font-size: 8px;
+      line-height: 10px;
+    }
+  }
+  .logo {
+    max-width: 137px;
+  }
+}
+
+.title {
+  font-size: 79.1177px;
+  line-height: 95px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 30px #ffba13;
+
+  &__block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-size: 61.0983px;
+    line-height: 73px;
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 35px;
+    line-height: 42px;
+    &__text {
+      font-size: 27px;
+      line-height: 32px;
+    }
+  }
 }
 
 .video {
@@ -51,15 +123,6 @@ body {
 @media (max-width: 700px) {
   .video {
     height: 300px;
-  }
-}
-
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-  }
-  .logo {
-    margin-bottom: 20px;
   }
 }
 
